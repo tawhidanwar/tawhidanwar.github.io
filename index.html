@@ -1,117 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Portfolio</title>
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Minimal styling -->
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #444;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .card {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .card h3 {
-      margin-top: 0;
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
+    html { scroll-behavior: smooth; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
+    .nav-link { font-weight: 600; }
+    header { padding: 6rem 0 2rem; }
+    section { padding: 4rem 0; border-top: 1px solid #eee; }
+    h1, h2, h3 { font-weight: 700; }
+    .subtle { color: #6c757d; }
+    .list-dashed li { margin-bottom: .35rem; }
+    .list-dashed li::marker { color: #adb5bd; }
+    .chip { display:inline-block; padding:.25rem .6rem; border:1px solid #dee2e6; border-radius:999px; margin:.15rem .25rem; font-size:.9rem; }
+    .footer { padding: 3rem 0; border-top: 1px solid #eee; color:#6c757d; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>👋 Hi, I'm Your Name</h1>
-    <p>Welcome to my portfolio website</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="about">
+<nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#top">Your Name</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#awards">Achievements</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="top" class="container">
+  <h1 class="display-5">👋 Hello, I’m Your Name</h1>
+  <p class="subtle">Your City, Country · <a href="mailto:you@example.com">you@example.com</a></p>
+  <p>
+    Short introduction about yourself goes here. Mention your profession, interests, or a short summary of what you do.
+  </p>
+  <div class="mt-3">
+    <a class="me-3" href="#">LinkedIn</a>
+    <a class="me-3" href="#">GitHub</a>
+    <a class="me-3" href="#">Twitter</a>
+    <a class="me-3" href="#">Portfolio</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
     <h2>About Me</h2>
     <p>
-      I’m a passionate developer and educator. I love working with Python, Java, and web technologies. 
-      This is my personal GitHub Pages site where I showcase my work and share my learning journey.
+      I am passionate about technology, software development, and continuous learning.
+      This is a dummy about section where you can write your story, your goals,
+      and what drives you.
     </p>
-  </section>
+  </div>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Project One</h3>
-        <p>A cool project I built using JavaScript and APIs.</p>
-      </div>
-      <div class="card">
-        <h3>Project Two</h3>
-        <p>Machine Learning model built with Python & scikit-learn.</p>
-      </div>
-      <div class="card">
-        <h3>Project Three</h3>
-        <p>My YouTube channel where I teach programming concepts.</p>
-      </div>
+<section id="education">
+  <div class="container">
+    <h2>Education</h2>
+    <div class="mt-4">
+      <h3 class="h5">Bachelor of Science in Computer Science</h3>
+      <p class="subtle">Your University · 2016 – 2020</p>
     </div>
-  </section>
+    <div class="mt-4">
+      <h3 class="h5">High School Diploma</h3>
+      <p class="subtle">Your High School · 2014 – 2016</p>
+    </div>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  </section>
+<section id="work">
+  <div class="container">
+    <h2>Work Experience</h2>
+    <div class="mt-4">
+      <h3 class="h5">Software Engineer</h3>
+      <p class="subtle">ABC Company · Jan 2022 – Present</p>
+      <ul class="list-dashed">
+        <li>Developed web applications using modern technologies.</li>
+        <li>Collaborated with teams to design scalable solutions.</li>
+        <li>Wrote unit and integration tests to ensure software quality.</li>
+      </ul>
+    </div>
+    <div class="mt-4">
+      <h3 class="h5">Intern Developer</h3>
+      <p class="subtle">XYZ Company · Jun 2020 – Dec 2021</p>
+      <ul class="list-dashed">
+        <li>Assisted in backend API development.</li>
+        <li>Worked on bug fixing and debugging.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Your Name | Built with ❤️ using GitHub Pages</p>
-  </footer>
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div>
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Python</span>
+      <span class="chip">Git</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <ul class="list-dashed">
+      <li><a href="#">Portfolio Website</a> — A simple personal site built with HTML & CSS.</li>
+      <li><a href="#">Weather App</a> — Web app fetching live weather data from API.</li>
+      <li><a href="#">Chatbot</a> — Python-based chatbot for answering FAQs.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="container">
+    <h2>Achievements</h2>
+    <ul class="list-dashed">
+      <li>Employee of the Month, ABC Company (2023)</li>
+      <li>Top 10 in National Coding Contest (2021)</li>
+      <li>Certification: AWS Cloud Practitioner (2020)</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer text-center">
+  <div class="container">
+    <p class="small">© 2025 Your Name · Built with ❤️ using GitHub Pages</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
