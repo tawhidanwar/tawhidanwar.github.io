@@ -17,16 +17,20 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
 
   <style>
+    /* === THEME: Two-tone (Blue + Teal) === */
     :root{
-      --bg:#ffffff; --fg:#121417; --muted:#616b76; --card:#ffffff; --border:#e8edf2; --accent:#0d6efd;
+      --blue:#0d6efd;           /* Primary */
+      --teal:#14b8a6;           /* Secondary */
+      --bg:#ffffff; --fg:#121417; --muted:#616b76; --card:#ffffff; --border:#e8edf2;
+      --accent:var(--blue);
     }
     @media (prefers-color-scheme: dark){
       :root{
-        --bg:#0c0f13; --fg:#e7ecf2; --muted:#9aa4af; --card:#12171d; --border:#232b34; --accent:#4da3ff;
+        --bg:#0b0f14; --fg:#e7ecf2; --muted:#9aa4af; --card:#121821; --border:#222a33;
       }
     }
     [data-theme="dark"]{
-      --bg:#0c0f13; --fg:#e7ecf2; --muted:#9aa4af; --card:#12171d; --border:#232b34; --accent:#4da3ff;
+      --bg:#0b0f14; --fg:#e7ecf2; --muted:#9aa4af; --card:#121821; --border:#222a33;
     }
 
     html{scroll-behavior:smooth;}
@@ -38,26 +42,30 @@
     /* NAV */
     .navbar{
       backdrop-filter:saturate(160%) blur(8px);
-      background: color-mix(in hsl, var(--bg) 92%, transparent);
+      background: color-mix(in oklab, var(--bg) 92%, transparent);
       border-bottom:1px solid var(--border);
     }
     .navbar .nav-link{font-weight:600;}
-    .navbar .nav-link.active{color:var(--accent)!important;}
+    .navbar .nav-link.active{color:var(--blue)!important;}
 
     /* HERO */
     .hero{
       padding:112px 0 72px;
       background:
-        radial-gradient(65% 40% at 10% 10%, color-mix(in oklab, var(--accent) 12%, transparent) 0%, transparent 100%),
-        radial-gradient(65% 40% at 90% 20%, color-mix(in oklab, var(--accent) 10%, transparent) 0%, transparent 100%);
+        radial-gradient(60% 45% at 15% 10%, color-mix(in oklab, var(--blue) 16%, transparent) 0%, transparent 100%),
+        radial-gradient(60% 45% at 85% 20%, color-mix(in oklab, var(--teal) 14%, transparent) 0%, transparent 100%);
     }
-    .kicker{letter-spacing:.16em; text-transform:uppercase; font-weight:800; color:var(--accent); font-size:.85rem;}
+    .kicker{letter-spacing:.16em; text-transform:uppercase; font-weight:800; color:var(--blue); font-size:.85rem;}
     .lead-muted{color:var(--muted);}
 
     /* SECTIONS */
     section{padding:80px 0;}
     .section-title{font-weight:900; letter-spacing:.2px; margin-bottom:1rem;}
-    .section-rule{height:6px; width:56px; border-radius:6px; background:var(--accent); opacity:.5; margin-bottom:1.25rem;}
+    .rule-blue{height:6px; width:56px; border-radius:6px; background:var(--blue); opacity:.6; margin-bottom:1.25rem;}
+    .rule-teal{height:6px; width:56px; border-radius:6px; background:var(--teal); opacity:.65; margin-bottom:1.25rem;}
+
+    .bg-soft-blue{background: color-mix(in oklab, var(--blue) 6%, var(--bg)); border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
+    .bg-soft-teal{background: color-mix(in oklab, var(--teal) 6%, var(--bg)); border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
 
     /* CARDS / ELEMENTS */
     .card-lite{
@@ -71,23 +79,18 @@
     .list-tight li{margin-bottom:.45rem;}
     .muted{color:var(--muted);}
 
-    /* AWARDS TIMELINE */
+    /* TIMELINE */
     .timeline{position:relative; margin-left:.75rem; padding-left:1rem;}
-    .timeline::before{
-      content:""; position:absolute; top:.35rem; bottom:.35rem; left:.2rem; width:2px; background:var(--border);
-    }
+    .timeline::before{content:""; position:absolute; top:.35rem; bottom:.35rem; left:.2rem; width:2px; background:var(--border);}
     .titem{position:relative; padding-left:.9rem; margin-bottom:1rem;}
     .titem::before{
       content:""; position:absolute; left:-.35rem; top:.45rem; width:10px; height:10px;
-      border:2px solid var(--accent); border-radius:50%; background:var(--bg);
+      border:2px solid var(--blue); border-radius:50%; background:var(--bg);
     }
 
     /* UTIL */
-    .bg-soft{background: color-mix(in oklab, var(--accent) 6%, var(--bg)); border:1px solid var(--border);}
     footer{border-top:1px solid var(--border); padding:36px 0; color:var(--muted);}
-    .back-to-top{
-      position:fixed; right:18px; bottom:18px; z-index:50; display:none;
-    }
+    .back-to-top{position:fixed; right:18px; bottom:18px; z-index:50; display:none;}
     .back-to-top.show{display:inline-flex;}
 
     /* Fade-in on scroll */
@@ -122,7 +125,7 @@
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO (Blue + Teal glow) -->
   <header id="home" class="hero">
     <div class="container">
       <div class="row gy-4 align-items-center">
@@ -145,28 +148,28 @@
     </div>
   </header>
 
-  <!-- ABOUT -->
+  <!-- ABOUT (Teal rule) -->
   <section id="about">
     <div class="container">
       <h2 class="section-title">About</h2>
-      <div class="section-rule"></div>
+      <div class="rule-teal"></div>
       <div class="row">
         <div class="col-lg-10">
           <div class="vstack gap-3">
             <p data-reveal>Since <strong>January 2018</strong>, I’ve been deeply engaged in teaching and mentoring, beginning as an Undergraduate Teaching Assistant and Student Mentor before joining as a full-time Lecturer in <strong>September 2019</strong>. Over the years, I’ve taught thousands of learners across <strong>CSE110 (Structured Programming)</strong> and <strong>CSE111 (Object-Oriented Programming)</strong>. I’m known for a calm, student-first style—listening carefully, explaining concepts repeatedly when needed, and keeping materials up-to-date. I’ve served as <strong>Course Coordinator</strong> for both CSE110 and CSE111, and as <strong>Undergraduate Co-Coordinator</strong>, handling offerings, schedules, assessments, and student support across the program.</p>
             <p data-reveal>I also build systems and processes: redesigned lab sheets, migrated course content between languages (Python ↔ Java), <strong>structured the entire Student Tutor management system</strong> including automated hour/payroll tracking, supported the university’s <strong>buX</strong> platform, and helped test and refine the <strong>Student Management System (Connect)</strong> via structured UAT. As <strong>Student Tutor Coordinator</strong>, I’ve managed large teams of tutors semester after semester, designing routine-aware schedules, coaching, and maintaining a structured feedback loop to strengthen both student learning and tutor development.</p>
             <p data-reveal>On research, I supervise thesis groups and publish in <strong>machine learning and applied computing</strong>. Beyond academia, I’m a <strong>tech enthusiast</strong> who actively explores the world of <strong>CPUs and GPUs</strong>—following new architectures, performance trends, and their role in shaping modern computing. I also share my teaching and learning journey through my YouTube channel <strong>Learn with Tawhid</strong>.</p>
-          </div>
+        </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TEACHING -->
-  <section id="teaching" class="bg-soft">
+  <!-- TEACHING (Soft Blue band) -->
+  <section id="teaching" class="bg-soft-blue">
     <div class="container">
       <h2 class="section-title">Teaching</h2>
-      <div class="section-rule"></div>
+      <div class="rule-blue"></div>
       <div class="row g-4">
         <div class="col-lg-6" data-reveal>
           <div class="card-lite h-100">
@@ -197,11 +200,11 @@
     </div>
   </section>
 
-  <!-- ADMIN -->
+  <!-- ADMIN (Teal rule) -->
   <section id="admin">
     <div class="container">
       <h2 class="section-title">Administrative &amp; Departmental Roles</h2>
-      <div class="section-rule"></div>
+      <div class="rule-teal"></div>
 
       <div class="vstack gap-3">
         <div class="card-lite" data-reveal>
@@ -248,11 +251,11 @@
     </div>
   </section>
 
-  <!-- RESEARCH -->
-  <section id="research" class="bg-soft">
+  <!-- RESEARCH (Soft Blue band) -->
+  <section id="research" class="bg-soft-blue">
     <div class="container">
       <h2 class="section-title">Research &amp; Publications (selected)</h2>
-      <div class="section-rule"></div>
+      <div class="rule-blue"></div>
 
       <div class="vstack gap-3">
         <div class="card-lite" data-reveal>
@@ -296,11 +299,11 @@
     </div>
   </section>
 
-  <!-- AWARDS -->
+  <!-- AWARDS (Teal rule + timeline) -->
   <section id="awards">
     <div class="container">
       <h2 class="section-title">Awards &amp; Honors</h2>
-      <div class="section-rule"></div>
+      <div class="rule-teal"></div>
 
       <div class="timeline">
         <div class="titem" data-reveal>
@@ -309,7 +312,7 @@
         </div>
         <div class="titem" data-reveal>
           <strong>Best Teaching Award — Extraordinary Performance in Teaching (Department, 2024)</strong>
-          <div class="muted">Honored for consistently excellent teaching, maintaining top-tier evaluation scores across multiple courses.</div>
+          <div class="muted">Maintained top-tier evaluation scores across multiple courses.</div>
         </div>
         <div class="titem" data-reveal>
           <strong>Best Teaching Award — Extraordinary Performance in Teaching (University-wide, 2022)</strong>
@@ -346,11 +349,11 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="bg-soft">
+  <!-- PROJECTS (Soft Blue band) -->
+  <section id="projects" class="bg-soft-blue">
     <div class="container">
       <h2 class="section-title">Projects &amp; Initiatives</h2>
-      <div class="section-rule"></div>
+      <div class="rule-blue"></div>
 
       <div class="row g-4">
         <div class="col-md-6" data-reveal>
@@ -387,11 +390,11 @@
     </div>
   </section>
 
-  <!-- TALKS -->
+  <!-- TALKS (Teal rule) -->
   <section id="talks">
     <div class="container">
       <h2 class="section-title">Talks &amp; Workshops</h2>
-      <div class="section-rule"></div>
+      <div class="rule-teal"></div>
       <div class="vstack gap-3">
         <div class="card-lite" data-reveal>
           <p class="mb-1"><strong>“From Campus to Career: The Power of Programming Skills”</strong></p>
@@ -413,11 +416,11 @@
     </div>
   </section>
 
-  <!-- EDUCATION -->
-  <section id="education" class="bg-soft">
+  <!-- EDUCATION (Soft Blue band) -->
+  <section id="education" class="bg-soft-blue">
     <div class="container">
       <h2 class="section-title">Education</h2>
-      <div class="section-rule"></div>
+      <div class="rule-blue"></div>
 
       <div class="vstack gap-3">
         <div class="card-lite" data-reveal>
@@ -445,11 +448,11 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT (Teal rule) -->
   <section id="contact">
     <div class="container">
       <h2 class="section-title">Contact &amp; Links</h2>
-      <div class="section-rule"></div>
+      <div class="rule-teal"></div>
       <div class="row gy-3">
         <div class="col-lg-7" data-reveal>
           <div class="card-lite">
