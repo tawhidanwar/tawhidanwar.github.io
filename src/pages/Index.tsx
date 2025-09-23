@@ -29,8 +29,7 @@ const Index = () => {
               <div>
                 <h3 className="text-lg font-serif font-semibold mb-4">{professorData.personal.name}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  {professorData.personal.title} at {professorData.personal.institution}, dedicated to advancing theoretical physics 
-                  research and inspiring the next generation of scientists.
+                  {professorData.personal.title} at {professorData.personal.institution}, dedicated to student-centered learning and large-scale CS education.
                 </p>
               </div>
               

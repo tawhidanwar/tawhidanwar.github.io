@@ -1,13 +1,16 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Download, ExternalLink } from "lucide-react";
+import { Mail, Download, ExternalLink, Linkedin } from "lucide-react";
 import heroImage from "@/assets/hero-academic.jpg";
 import professorPortrait from "@/assets/Tawhid_Anwar_Portrait.jpg";
 import professorData from "@/data/professor-data.json";
+import { url } from "inspector";
+import { FaLinkedin } from 'react-icons/fa';
 
 export function HeroSection() {
   const handleContactClick = () => {
     const email = professorData.personal.email || "";
-    window.location.href = `mailto:${email}`;
+    // window.location.href = `mailto:${email}`;
+    window.open("https://bd.linkedin.com/in/md-tawhid-anwar", "_blank");
   };
 
   return (
@@ -56,8 +59,8 @@ export function HeroSection() {
           <div className="order-2 lg:order-1 space-y-6 sm:space-y-8 text-center lg:text-left">
             <div className="space-y-3 sm:space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-white leading-tight">
-                {professorData.personal.name.split(' ').slice(0, 1).join(' ')}
-                <span className="block text-primary">{professorData.personal.name.split(' ').slice(1).join(' ')}</span>
+                {professorData.personal.name}
+                {/* <span className="block text-primary">{professorData.personal.name.split(' ').slice(1).join(' ')}</span> */}
               </h1>
               <p className="text-lg sm:text-xl text-academic-blue font-medium">
                 {professorData.personal.title} • {professorData.personal.institution}
@@ -75,7 +78,11 @@ export function HeroSection() {
                   size="lg" 
                   className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-academic w-full sm:w-auto"
                 >
-                  <Mail className="mr-2 h-4 w-4" />
+                  {/* <Mail className="mr-2 h-4 w-4" /> */}
+                  {/* <Linkedin className="mr-2 h-4 w-4" /> */}
+                  <FaLinkedin size={24} className="h-4 w-4"  />
+
+
                   Contact Me
                 </Button>
                 <Button

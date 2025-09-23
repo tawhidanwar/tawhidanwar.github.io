@@ -15,7 +15,7 @@
     {
       "icon": "MapPin",
       "label": "Address",
-      "value": "BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
+      "value": "BRAC University, Kha 224 Pragati Sarani, Merul Badda , Dhaka 1212, Bangladesh",
       "link": "https://maps.google.com/?q=BRAC+University"
     }
   ],
@@ -28,5 +28,5 @@
     { "day": "Friday", "time": "Closed" },
     { "day": "Saturday", "time": "Closed" }
   ],
-  "appointmentLink": "https://calendly.com/pollocknag1999/30min"
+  "appointmentLink": "https://calendly.com/"
 }
