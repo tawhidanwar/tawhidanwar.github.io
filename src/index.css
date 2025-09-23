@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 26% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 26% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 26% 14%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 26% 14%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 8% 16%;
+
+    --accent: 43 74% 66%;
+    --accent-foreground: 220 26% 14%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+
+    /* Academic Portfolio Theme */
+    --academic-blue: 221 83% 53%;
+    --academic-blue-light: 221 83% 63%;
+    --academic-blue-dark: 221 83% 43%;
+    --academic-gold: 43 74% 66%;
+    --academic-gray: 220 8% 46%;
+    --academic-gray-light: 220 14% 96%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--academic-blue)), hsl(var(--academic-blue-dark)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--academic-gray-light)));
+    
+    /* Shadows */
+    --shadow-academic: 0 10px 30px -5px hsl(var(--academic-blue) / 0.1);
+    --shadow-card: 0 4px 20px -2px hsl(var(--foreground) / 0.08);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 26% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 26% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 26% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 221 83% 63%;
+    --primary-foreground: 220 26% 8%;
+
+    --secondary: 220 26% 14%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 26% 14%;
+    --muted-foreground: 220 8% 65%;
+
+    --accent: 43 74% 66%;
+    --accent-foreground: 220 26% 8%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 26% 18%;
+    --input: 220 26% 18%;
+    --ring: 221 83% 63%;
+
+    /* Dark Academic Portfolio Theme */
+    --academic-blue: 221 83% 63%;
+    --academic-blue-light: 221 83% 73%;
+    --academic-blue-dark: 221 83% 53%;
+    --academic-gold: 43 74% 66%;
+    --academic-gray: 220 8% 65%;
+    --academic-gray-light: 220 26% 14%;
+    
+    /* Dark Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--academic-blue)), hsl(var(--academic-blue-light)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--academic-gray-light)));
+    
+    /* Dark Shadows */
+    --shadow-academic: 0 10px 30px -5px hsl(var(--academic-blue) / 0.2);
+    --shadow-card: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

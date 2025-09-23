@@ -1,0 +1,32 @@
+{
+  "contactInfo": [
+    {
+      "icon": "Mail",
+      "label": "Email",
+      "value": "tawhid.anwar@bracu.ac.bd",
+      "link": "mailto:tawhid.anwar@bracu.ac.bd"
+    },
+    {
+      "icon": "Building",
+      "label": "Office",
+      "value": "Room 4G03, CSE Department, BRAC University",
+      "link": null
+    },
+    {
+      "icon": "MapPin",
+      "label": "Address",
+      "value": "BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
+      "link": "https://maps.google.com/?q=BRAC+University"
+    }
+  ],
+  "officeHours": [
+    { "day": "Sunday", "time": "By Appointment Only" },
+    { "day": "Monday", "time": "By Appointment Only" },
+    { "day": "Tuesday", "time": "By Appointment Only" },
+    { "day": "Wednesday", "time": "By Appointment Only" },
+    { "day": "Thursday", "time": "By Appointment Only" },
+    { "day": "Friday", "time": "Closed" },
+    { "day": "Saturday", "time": "Closed" }
+  ],
+  "appointmentLink": "https://calendly.com/pollocknag1999/30min"
+}

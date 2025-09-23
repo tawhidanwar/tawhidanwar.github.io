@@ -1,0 +1,46 @@
+{
+  "courses": [
+    {
+      "code": "CSE111",
+      "title": "Object Oriented Programming",
+      "level": "Undergraduate",
+      "semester": "Fall 2025",
+      "students": null,
+      "rating": null,
+      "description": "This course is an introduction to data structures, formal specification of syntax, elements of language theory and mathematical preliminaries. Topics include formal languages, structured programming concepts, and a survey of features of existing high level languages. Students design and write applications using an appropriate language, with a compulsory 3-hour weekly lab."
+    },
+    {
+      "code": "CSE110",
+      "title": "Programming Language I",
+      "level": "Undergraduate",
+      "semester": "Fall 2025",
+      "students": null,
+      "rating": null,
+      "description": "An introduction to the foundations of computation and the purpose of mechanized computation. Emphasis is placed on techniques of problem analysis and the development of algorithms and programs. Topics include algorithms, flow chart construction, information representation, and writing, debugging, and running programs."
+    }
+  ],
+  "teachingPhilosophy": {
+    "title": "My Teaching Philosophy",
+    "content": "I believe that a teacher's job is to be calm and explain the same concept a hundred times if needed, without getting annoyed. My full lecture series is available on the university's buX platform and my YouTube channel, 'Learn with Tawhid', to ensure students have access to the resources they need to succeed."
+  },
+  "achievements": [
+    {
+      "title": "Chancellor’s Gold Medal (Valedictorian, M.Sc.)",
+      "year": "2023",
+      "organization": "BRAC University",
+      "description": "unavailable"
+    },
+    {
+      "title": "Best Teaching Award",
+      "year": "2022",
+      "organization": "BRAC University",
+      "description": "unavailable"
+    },
+    {
+      "title": "Outstanding Service Award",
+      "year": "2025",
+      "organization": "Department of CSE, BRAC University",
+      "description": "unavailable"
+    }
+  ]
+}

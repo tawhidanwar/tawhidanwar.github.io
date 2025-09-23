@@ -1,0 +1,56 @@
+{
+  "personal": {
+    "name": "Md. Tawhid Anwar",
+    "title": "Senior Lecturer",
+    "institution": "BRAC University",
+    "email": "tawhid.anwar@bracu.ac.bd",
+    "description": "Passionate Senior Lecturer at BRAC University specializing in introductory programming (Java & Python). Dedicated to student-centered learning and large-scale CS education. Also serves as Undergraduate Co-Coordinator.",
+    "cvLink": "https://drive.google.com/file/d/1ZjlyubgUww6ihiJBg0ZIphvchW2BFJ_S/view?usp=sharing"
+  },
+  "stats": {
+    "publications": "5+",
+    "yearsTeaching": "6",
+    "awards": "15+"
+  },
+  "contact": {
+    "office": "Room 4G03, CSE Department, BRAC University",
+    "institution": "BRAC University",
+    "address": "66 Mohakhali, Dhaka 1212, Bangladesh",
+    "email": "tawhid.anwar@bracu.ac.bd"
+  },
+  "research": {
+    "areas": [
+      "Machine Learning",
+      "Applied Computing",
+      "CS Education at Scale",
+      "Natural Language Processing (NLP)",
+      "Biometric Authentication",
+      "Solar Irradiance Forecasting"
+    ],
+    "researchProfile": "https://scholar.google.com/citations?user=pZgG15EAAAAJ&hl=en"
+  },
+  "publications": [
+    {
+      "title": "A Machine Learning Approach to Forecast Solar Irradiance",
+      "journal": "IEEE Xplore",
+      "year": "2022"
+    },
+    {
+      "title": "A Comparative Study on Word Embeddings in NLP for Sentiment Analysis",
+      "journal": "IEEE Xplore",
+      "year": "2021"
+    }
+  ],
+  "courses": [
+    {
+      "code": "CSE111",
+      "title": "Object-Oriented Programming",
+      "level": "Undergraduate"
+    },
+    {
+      "code": "CSE110",
+      "title": "Structured Programming",
+      "level": "Undergraduate"
+    }
+  ]
+}

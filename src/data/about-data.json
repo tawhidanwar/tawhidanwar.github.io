@@ -1,0 +1,81 @@
+{
+  "metaDescription": "Discover the profile of Md. Tawhid Anwar, a Senior Lecturer in the Department of Computer Science and Engineering at BRAC University. Explore his teaching philosophy, administrative roles, research, awards, and expertise in programming and CS education.",
+  "biography": {
+    "paragraphs": [
+      "Md. Tawhid Anwar is a Senior Lecturer in the Department of Computer Science and Engineering at BRAC University, where he also serves as the Undergraduate Co-Coordinator. He is deeply passionate about teaching, primarily focusing on introductory programming courses like Structured Programming (CSE110) and Object-Oriented Programming (CSE111) using Java and Python.",
+      "Known for his calm and student-centered teaching approach, Tawhid has made his full lecture series available on YouTube and the university's buX platform to support student learning. His journey at BRAC University began in January 2018 as a Teaching Assistant, and he became a full-time Lecturer in September 2019.",
+      "Beyond teaching, he has held significant administrative roles, including coordinating the student tutor program, managing departmental labs, and leading user acceptance testing for the university's student management system. He is also an active supervisor for thesis groups in machine learning and applied computing."
+    ]
+  },
+  "education": [
+    {
+      "degree": "M.Sc. in Computer Science & Engineering",
+      "institution": "BRAC University",
+      "year": "2022",
+      "focus": "Computer Science & Engineering"
+    },
+    {
+      "degree": "B.Sc. in Computer Science & Engineering",
+      "institution": "BRAC University",
+      "year": "2019",
+      "focus": "Computer Science & Engineering"
+    },
+    {
+        "degree": "Higher Secondary Certificate (HSC)",
+        "institution": "Cambrian College",
+        "year": "2014",
+        "focus": "Science"
+    },
+    {
+        "degree": "Secondary School Certificate (SSC)",
+        "institution": "Brahmondi K.K.M Govt. High School",
+        "year": "2012",
+        "focus": "Science"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Senior Lecturer",
+      "institution": "BRAC University",
+      "period": "2019–Present",
+      "description": "Teaches introductory programming courses (CSE110 & CSE111) in Java and Python. Also serves as Undergraduate Co-Coordinator and Course Coordinator."
+    },
+    {
+        "position": "Undergraduate Co-Coordinator",
+        "institution": "BRAC University",
+        "period": "June 2024–Present",
+        "description": "Manages course offerings, scheduling, student support, and academic coordination for the CSE department."
+    },
+    {
+      "position": "Teaching Assistant",
+      "institution": "BRAC University",
+      "period": "2018–2019",
+      "description": "Assisted with teaching and grading for undergraduate computer science courses."
+    }
+  ],
+  "honors": [
+    "Best Teaching Award (Departmental, 2025)",
+    "Outstanding Service Award (Departmental, 2025)",
+    "Best Teaching Award (Departmental, 2024)",
+    "Outstanding Service Award (Departmental, 2024)",
+    "Chancellor’s Gold Medal (Valedictorian, M.Sc., 2023)",
+    "Best Teaching Award (University-wide, 2022)",
+    "Vice Chancellor’s Honor List (7 times)",
+    "Dean’s Honor List (2 times)",
+    "HSC Board Scholarship (87th in Dhaka Board)"
+  ],
+  "expertise": [
+    "Teaching at Scale",
+    "Java",
+    "Python",
+    "Object-Oriented Programming (OOP)",
+    "Git",
+    "SQL",
+    "Assessment Quality Assurance",
+    "Program Operations",
+    "User Acceptance Testing (UAT)",
+    "CPUs/GPUs",
+    "CS Education at Scale",
+    "Process Design for Large Courses"
+  ]
+}
