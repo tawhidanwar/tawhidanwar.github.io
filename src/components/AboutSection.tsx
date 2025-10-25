@@ -81,32 +81,31 @@ export function AboutSection() {
         </div>
 
         {/* Education */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-serif font-semibold text-center mb-8 flex items-center justify-center gap-2">
-            <GraduationCap className="h-6 w-6" />
-            Education
+        <div id="education" className="mb-16">
+          <h3 className="text-3xl font-serif font-semibold mb-12 flex items-start gap-2">
+            <GraduationCap className="h-7 w-7 mt-1" />
+            EDUCATION
           </h3>
-          <div className={`grid gap-6 grid-cols-1 md:grid-cols-${education.length}`}>
+          <div className="space-y-6">
             {education.map((edu, index) => (
-              <Card 
-                key={index} 
-                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1 bg-gradient-card border-border/50"
-              >
-                <CardHeader>
-                  <CardTitle className="text-lg font-serif text-primary">
-                    {edu.degree}
-                  </CardTitle>
-                  <CardDescription className="font-medium">
-                    {edu.institution}
-                  </CardDescription>
-                  <div className="text-sm text-muted-foreground">
-                    {edu.year}
+              <Card key={index} className="bg-gradient-card border-border/50 hover:shadow-card transition-all duration-300">
+                <CardContent className="pt-6">
+                  <div className="flex justify-between items-start mb-3">
+                    <h4 className="text-[20px] font-bold text-foreground uppercase">
+                      {edu.degree}
+                    </h4>
+                    <span className="text-lg text-primary font-medium whitespace-nowrap ml-4">
+                      {edu.year}
+                    </span>
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    {edu.focus}
-                  </p>
+                  <div className="space-y-1 text-[16px]">
+                    <p className="text-muted-foreground">
+                      <span className="font-semibold text-foreground">Subject:</span> {edu.focus}
+                    </p>
+                    <p className="text-muted-foreground">
+                      <span className="font-semibold text-foreground">{edu.institution_type}:</span> {edu.institution}
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -115,8 +114,8 @@ export function AboutSection() {
 
         {/* Professional Experience */}
         <div>
-          <h3 className="text-2xl font-serif font-semibold text-center mb-8 flex items-center justify-center gap-2">
-            <Users className="h-6 w-6" />
+          <h3 className="text-3xl font-serif font-semibold mb-12 flex items-start gap-2">
+            <Users className="h-7 w-7 mt-1" />
             Professional Experience
           </h3>
           <div className="space-y-6">
@@ -128,20 +127,20 @@ export function AboutSection() {
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div>
-                      <CardTitle className="text-xl font-serif text-primary">
+                      <CardTitle className="text-[20px] font-serif text-primary">
                         {exp.position}
                       </CardTitle>
-                      <CardDescription className="text-base font-medium mt-1">
+                      <CardDescription className="text-[17px] font-medium mt-2">
                         {exp.institution}
                       </CardDescription>
                     </div>
-                    <Badge variant="outline" className="text-sm">
+                    <Badge variant="outline" className="text-base px-3 py-1">
                       {exp.period}
                     </Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-[16px] text-muted-foreground leading-relaxed">
                     {exp.description}
                   </p>
                 </CardContent>

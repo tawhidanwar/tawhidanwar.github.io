@@ -14,6 +14,7 @@ export function Sidebar() {
 
   const navItems = [
     { name: "ABOUT", href: "#about" },
+    { name: "EDUCATION", href: "#education" },
     { name: "PUBLICATIONS", href: "#publications" },
     { name: "TEACHING", href: "#teaching" },
     { name: "CONTACT", href: "#contact" },
@@ -61,7 +62,7 @@ export function Sidebar() {
   // Observe scroll position to highlight active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["#about", "#publications", "#teaching", "#contact"];
+      const sections = ["#about", "#education", "#publications", "#teaching", "#contact"];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {

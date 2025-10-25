@@ -12,25 +12,29 @@
       "degree": "M.Sc. in Computer Science & Engineering",
       "institution": "BRAC University",
       "year": "2022",
-      "focus": "Computer Science & Engineering"
+      "focus": "Computer Science & Engineering",
+      "institution_type": "University"
     },
     {
       "degree": "B.Sc. in Computer Science & Engineering",
       "institution": "BRAC University",
       "year": "2019",
-      "focus": "Computer Science & Engineering"
+      "focus": "Computer Science & Engineering",
+      "institution_type": "University"
     },
     {
         "degree": "Higher Secondary Certificate (HSC)",
         "institution": "Cambrian College",
         "year": "2014",
-        "focus": "Science"
+        "focus": "Science",
+        "institution_type": "College"
     },
     {
         "degree": "Secondary School Certificate (SSC)",
         "institution": "Brahmondi K.K.M Govt. High School",
         "year": "2012",
-        "focus": "Science"
+        "focus": "Science",
+        "institution_type": "School"
     }
   ],
   "experience": [
