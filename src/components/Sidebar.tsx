@@ -140,7 +140,7 @@ export function Sidebar() {
           ))}
         </nav>
 
-        {/* Theme Toggle - Bottom Left */}
+        {/* Theme Toggle */}
         <div className="w-full mt-auto pt-6 flex justify-left">
           <Button
             id="theme-toggle-btn"
