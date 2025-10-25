@@ -14,7 +14,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 lg:pt-0">
       {/* Background Image */}
       <div 
         className="absolute inset-0 z-0"
@@ -36,31 +36,30 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-12 py-12 sm:py-20">
+        <div className="flex flex-col lg:grid lg:grid-cols-1 gap-8 lg:gap-12 items-center lg:items-start">
           
-          {/* Professor Portrait - Mobile First */}
-          <div className="order-1 lg:order-2 flex justify-center w-full">
-            <div className="relative sm: mt-8 lg:mt-0">
-              <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-2xl overflow-hidden shadow-academic bg-gradient-card border-2 sm:border-4 border-background/50">
+          {/* Professor Portrait - Mobile and Tablet Only */}
+          <div className="order-1 flex justify-center w-full lg:hidden">
+            <div className="relative mt-8">
+              <div className="w-64 h-64 sm:w-72 sm:h-72 rounded-2xl overflow-hidden shadow-academic bg-gradient-card border-2 sm:border-4 border-background/50">
                 <img 
                   src={professorPortrait}
                   alt={professorData.personal.name}
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              {/* Decorative elements */}
+              
               <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 w-6 h-6 sm:w-8 sm:h-8 bg-primary rounded-full opacity-20"></div>
               <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 w-4 h-4 sm:w-6 sm:h-6 bg-academic-gold rounded-full opacity-30"></div>
             </div>
           </div>
 
-          {/* Content */}
-          <div className="order-2 lg:order-1 space-y-6 sm:space-y-8 text-center lg:text-left">
+          {/* Content - Full Width on Desktop */}
+          <div className="order-2 space-y-6 sm:space-y-8 text-center lg:text-left w-full max-w-4xl lg:max-w-none">
             <div className="space-y-3 sm:space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-white leading-tight">
                 {professorData.personal.name}
-                {/* <span className="block text-primary">{professorData.personal.name.split(' ').slice(1).join(' ')}</span> */}
               </h1>
               <p className="text-lg sm:text-xl text-academic-blue font-medium">
                 {professorData.personal.title} • {professorData.personal.institution}
@@ -68,7 +67,7 @@ export function HeroSection() {
             </div>
 
             <div className="space-y-4 sm:space-y-6">
-              <p className="text-base sm:text-lg text-amber-50 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              <p className="text-base sm:text-lg lg:text-xl text-amber-50 leading-relaxed max-w-xl lg:max-w-5xl mx-auto lg:mx-0">
                 {professorData.personal.description}
               </p>
 
@@ -78,11 +77,7 @@ export function HeroSection() {
                   size="lg" 
                   className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-academic w-full sm:w-auto"
                 >
-                  {/* <Mail className="mr-2 h-4 w-4" /> */}
-                  {/* <Linkedin className="mr-2 h-4 w-4" /> */}
                   <FaLinkedin size={24} className="h-4 w-4"  />
-
-
                   Contact Me
                 </Button>
                 <Button
@@ -97,7 +92,7 @@ export function HeroSection() {
                 <Button 
                   variant="ghost" 
                   size="lg"
-                  className="text-amber-50 hover:bg-primary/10 w-full sm:w-auto lg:hidden xl:flex"
+                  className="text-amber-50 hover:bg-primary/10 w-full sm:w-auto"
                   onClick={() => window.open(professorData.research.researchProfile, '_blank')}
                 >
                   <ExternalLink className="mr-2 h-4 w-4" />
@@ -107,18 +102,18 @@ export function HeroSection() {
             </div>
 
             {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-6 sm:pt-8 max-w-sm mx-auto lg:max-w-none lg:mx-0">
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-primary">{professorData.stats.publications}</div>
-                <div className="text-xs sm:text-sm text-amber-50">Publications</div>
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8 pt-6 sm:pt-8 max-w-sm sm:max-w-md lg:max-w-2xl mx-auto lg:mx-0">
+              <div className="text-center lg:text-left">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">{professorData.stats.publications}</div>
+                <div className="text-xs sm:text-sm lg:text-base text-amber-50">Publications</div>
               </div>
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-primary">{professorData.stats.yearsTeaching}</div>
-                <div className="text-xs sm:text-sm text-amber-50">Years Teaching</div>
+              <div className="text-center lg:text-left">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">{professorData.stats.yearsTeaching}</div>
+                <div className="text-xs sm:text-sm lg:text-base text-amber-50">Years Teaching</div>
               </div>
-              <div className="text-center">
-                <div className="text-xl sm:text-2xl font-bold text-primary">{professorData.stats.awards}</div>
-                <div className="text-xs sm:text-sm text-amber-50">Awards</div>
+              <div className="text-center lg:text-left">
+                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">{professorData.stats.awards}</div>
+                <div className="text-xs sm:text-sm lg:text-base text-amber-50">Awards</div>
               </div>
             </div>
           </div>
