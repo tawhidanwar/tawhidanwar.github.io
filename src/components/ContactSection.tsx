@@ -23,15 +23,13 @@ export function ContactSection() {
   }));
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif font-bold text-foreground mb-4">
-            Contact
+        <div className="mb-16">
+          <h2 className="text-4xl font-serif font-bold text-foreground mb-12 flex items-center gap-3">
+            <Mail className="h-10 w-10" />
+            CONTACT
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Get in touch for collaborations, academic inquiries, or student consultations.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

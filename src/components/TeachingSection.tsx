@@ -8,16 +8,13 @@ export function TeachingSection() {
   const { courses, teachingPhilosophy, achievements } = teachingData;
 
   return (
-    <section id="teaching" className="py-20 bg-muted/30">
+    <section id="teaching" className="py-12 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif font-bold text-foreground mb-4">
-            Teaching
+        <div className="mb-16">
+          <h2 className="text-4xl font-serif font-bold text-foreground mb-12 flex items-center gap-3">
+            <GraduationCap className="h-10 w-10" />
+            TEACHING EXPERIENCE
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            {/* Inspiring the next generation of physicists through innovative pedagogy and mentorship. */}
-            {teachingPhilosophy.content}
-          </p>
         </div>
 
         {/* Teaching Philosophy */}

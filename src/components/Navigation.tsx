@@ -14,8 +14,11 @@ export function Navigation() {
 
   const navItems = [
     { name: "About", href: "#about" },
+    { name: "Education", href: "#education" },
+    { name: "Honors & Awards", href: "#honors" },
+    { name: "Research Interest", href: "#research-interest" },
     { name: "Research & Publications", href: "#publications" },
-    { name: "Teaching", href: "#teaching" },
+    { name: "Experience", href: "#teaching" },
     { name: "Contact", href: "#contact" },
   ];
 

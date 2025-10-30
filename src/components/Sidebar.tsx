@@ -15,8 +15,10 @@ export function Sidebar() {
   const navItems = [
     { name: "ABOUT", href: "#about" },
     { name: "EDUCATION", href: "#education" },
+    { name: "HONORS", href: "#honors" },
+    { name: "RESEARCH", href: "#research-interest" },
     { name: "PUBLICATIONS", href: "#publications" },
-    { name: "TEACHING", href: "#teaching" },
+    { name: "EXPERIENCE", href: "#teaching" },
     { name: "CONTACT", href: "#contact" },
   ];
 
@@ -62,7 +64,7 @@ export function Sidebar() {
   // Observe scroll position to highlight active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["#about", "#education", "#publications", "#teaching", "#contact"];
+      const sections = ["#about", "#education", "#honors", "#research-interest", "#publications", "#teaching", "#contact"];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {
@@ -86,16 +88,16 @@ export function Sidebar() {
   }, []);
 
   return (
-    <aside className="hidden lg:flex fixed left-0 top-0 h-screen w-72 bg-background/40 backdrop-blur-xl border-r border-border/50 flex-col items-center py-8 px-6 z-50 overflow-y-auto sidebar-scrollbar shadow-2xl">
+    <aside className="hidden lg:flex fixed left-0 top-0 h-screen w-72 bg-background/40 backdrop-blur-xl border-r border-border/50 flex-col items-center py-6 px-6 z-50 overflow-hidden shadow-2xl">
       {/* Glassmorphic overlay effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none"></div>
       
       <div className="relative z-10 w-full flex flex-col items-center h-full">
         {/* Profile Picture */}
-        <div className="flex flex-col items-center mb-12">
+        <div className="flex flex-col items-center mb-8">
           <div 
             onClick={handleProfileClick}
-            className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl mb-6 ring-2 ring-primary/10 cursor-pointer transition-all duration-300 hover:scale-105 hover:border-primary/50 hover:ring-primary/20"
+            className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl mb-4 ring-2 ring-primary/10 cursor-pointer transition-all duration-300 hover:scale-105 hover:border-primary/50 hover:ring-primary/20"
             title="Back to top"
           >
             <img 
@@ -119,7 +121,7 @@ export function Sidebar() {
         </div>
 
         {/* Navigation Items */}
-        <nav className="w-full flex flex-col space-y-2 flex-grow">
+        <nav className="w-full flex flex-col space-y-1.5 flex-grow">
           {navItems.map((item) => (
             <a
               key={item.name}
@@ -127,7 +129,7 @@ export function Sidebar() {
               onClick={(e) => handleNavClick(e, item.href)}
               className={`
                 text-muted-foreground hover:text-primary 
-                px-6 py-4 text-sm font-medium tracking-wide
+                px-4 py-3 text-sm font-medium tracking-wide
                 transition-all duration-300 rounded-xl text-center
                 backdrop-blur-sm border border-transparent
                 ${activeSection === item.href 
@@ -142,7 +144,7 @@ export function Sidebar() {
         </nav>
 
         {/* Theme Toggle */}
-        <div className="w-full mt-auto pt-6 flex justify-left">
+        <div className="w-full mt-auto pt-4 flex justify-left">
           <Button
             id="theme-toggle-btn"
             variant="ghost"

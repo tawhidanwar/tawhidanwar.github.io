@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Quote, Calendar, Users } from "lucide-react";
+import { ExternalLink, Quote, Calendar, Users, BookOpen } from "lucide-react";
 import publicationsData from "@/data/publications-data.json";
 
 export function PublicationsSection() {
@@ -25,16 +25,14 @@ export function PublicationsSection() {
   };
 
   return (
-    <section id="publications" className="py-20">
+    <section id="publications" className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif font-bold text-foreground mb-4">
-            Research & Publications
+        <div className="mb-16">
+          <h2 className="text-4xl font-serif font-bold text-foreground mb-12 flex items-center gap-3">
+            <BookOpen className="h-10 w-10" />
+            PUBLICATIONS
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Peer-reviewed publications and scholarly contributions to the scientific community.
-          </p>
         </div>
 
         {/* Publications list */}

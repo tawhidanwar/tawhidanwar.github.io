@@ -5,8 +5,11 @@ import professorPortrait from "@/assets/Tawhid_Anwar_Portrait.jpg";
 import professorData from "@/data/professor-data.json";
 import { url } from "inspector";
 import { FaLinkedin } from 'react-icons/fa';
+import { useTheme } from "./ThemeProvider";
 
 export function HeroSection() {
+  const { theme } = useTheme();
+  
   const handleContactClick = () => {
     const email = professorData.personal.email || "";
     // window.location.href = `mailto:${email}`;
@@ -15,25 +18,34 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 lg:pt-0">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-      {/* default: small devices */}
-      <div
-        className="absolute inset-0 
-          bg-gradient-to-r from-zinc-900/70 via-zinc-800/50 to-transparent 
-          backdrop-blur-sm
-        "
-      />
-          
-      </div>
+      {/* Background - Different approach for light and dark modes */}
+      {theme === 'dark' ? (
+        // Dark mode: Image with dark overlay
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(${heroImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-zinc-900/70 via-zinc-800/50 to-transparent backdrop-blur-sm" />
+        </div>
+      ) : (
+        // Light mode: Subtle gradient background
+        <div className="absolute inset-0 z-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+          <div className="absolute inset-0 opacity-10"
+            style={{
+              backgroundImage: `url(${heroImage})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              filter: 'blur(8px)'
+            }}
+          />
+        </div>
+      )}
 
       {/* Content */}
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-12 py-12 sm:py-20">
@@ -58,16 +70,20 @@ export function HeroSection() {
           {/* Content - Full Width on Desktop */}
           <div className="order-2 space-y-6 sm:space-y-8 text-center lg:text-left w-full max-w-4xl lg:max-w-none">
             <div className="space-y-3 sm:space-y-4">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold text-white leading-tight">
+              <h1 className={`text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold leading-tight ${
+                theme === 'dark' ? 'text-white' : 'text-foreground'
+              }`}>
                 {professorData.personal.name}
               </h1>
-              <p className="text-lg sm:text-xl text-academic-blue font-medium">
+              <p className="text-lg sm:text-xl text-primary font-medium">
                 {professorData.personal.title} • {professorData.personal.institution}
               </p>
             </div>
 
             <div className="space-y-4 sm:space-y-6">
-              <p className="text-base sm:text-lg lg:text-xl text-amber-50 leading-relaxed max-w-xl lg:max-w-5xl mx-auto lg:mx-0">
+              <p className={`text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl lg:max-w-5xl mx-auto lg:mx-0 ${
+                theme === 'dark' ? 'text-amber-50' : 'text-muted-foreground'
+              }`}>
                 {professorData.personal.description}
               </p>
 
@@ -92,7 +108,9 @@ export function HeroSection() {
                 <Button 
                   variant="ghost" 
                   size="lg"
-                  className="text-amber-50 hover:bg-primary/10 w-full sm:w-auto"
+                  className={`w-full sm:w-auto ${
+                    theme === 'dark' ? 'text-amber-50 hover:bg-primary/10' : 'text-foreground hover:bg-primary/10'
+                  }`}
                   onClick={() => window.open(professorData.research.researchProfile, '_blank')}
                 >
                   <ExternalLink className="mr-2 h-4 w-4" />
@@ -105,15 +123,21 @@ export function HeroSection() {
             <div className="grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8 pt-6 sm:pt-8 max-w-sm sm:max-w-md lg:max-w-2xl mx-auto lg:mx-0">
               <div className="text-center lg:text-left">
                 <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">{professorData.stats.publications}</div>
-                <div className="text-xs sm:text-sm lg:text-base text-amber-50">Publications</div>
+                <div className={`text-xs sm:text-sm lg:text-base ${
+                  theme === 'dark' ? 'text-amber-50' : 'text-muted-foreground'
+                }`}>Publications</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">{professorData.stats.yearsTeaching}</div>
-                <div className="text-xs sm:text-sm lg:text-base text-amber-50">Years Teaching</div>
+                <div className={`text-xs sm:text-sm lg:text-base ${
+                  theme === 'dark' ? 'text-amber-50' : 'text-muted-foreground'
+                }`}>Years Teaching</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary">{professorData.stats.awards}</div>
-                <div className="text-xs sm:text-sm lg:text-base text-amber-50">Awards</div>
+                <div className={`text-xs sm:text-sm lg:text-base ${
+                  theme === 'dark' ? 'text-amber-50' : 'text-muted-foreground'
+                }`}>Awards</div>
               </div>
             </div>
           </div>

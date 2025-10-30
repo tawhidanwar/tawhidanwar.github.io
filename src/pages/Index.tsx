@@ -3,6 +3,8 @@ import { Navigation } from "@/components/Navigation";
 import { Sidebar } from "@/components/Sidebar";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
+import { HonorsSection } from "@/components/HonorsSection";
+import { ResearchInterestSection } from "@/components/ResearchInterestSection";
 import { ResearchSection } from "@/components/ResearchSection";
 import { PublicationsSection } from "@/components/PublicationsSection";
 import { TeachingSection } from "@/components/TeachingSection";
@@ -24,6 +26,8 @@ const Index = () => {
           <main>
             <HeroSection />
             <AboutSection />
+            <HonorsSection />
+            <ResearchInterestSection />
             {/* <ResearchSection /> */}
             <PublicationsSection />
             <TeachingSection />
@@ -45,7 +49,9 @@ const Index = () => {
                   <h4 className="font-medium mb-4">Quick Links</h4>
                   <ul className="space-y-2 text-sm">
                     <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About</a></li>
-                    {/* <li><a href="#research" className="text-muted-foreground hover:text-primary transition-colors">Research</a></li> */}
+                    <li><a href="#education" className="text-muted-foreground hover:text-primary transition-colors">Education</a></li>
+                    <li><a href="#honors" className="text-muted-foreground hover:text-primary transition-colors">Honors & Awards</a></li>
+                    <li><a href="#research-interest" className="text-muted-foreground hover:text-primary transition-colors">Research Interest</a></li>
                     <li><a href="#publications" className="text-muted-foreground hover:text-primary transition-colors">Research & Publications</a></li>
                     <li><a href="#teaching" className="text-muted-foreground hover:text-primary transition-colors">Teaching</a></li>
                     <li><a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
