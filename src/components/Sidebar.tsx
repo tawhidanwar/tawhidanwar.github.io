@@ -64,9 +64,12 @@ export function Sidebar() {
   // Observe scroll position to highlight active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["#about", "#education", "#honors", "#research-interest", "#publications", "#teaching", "#contact"];
-      const scrollPosition = window.scrollY + 200;
+      const sections = ["#about", "#education", "#research-interest", "#publications", "#honors", "#teaching", "#contact"];
+      const scrollPosition = window.scrollY + 150; // Adjusted offset for better detection
 
+      // Find the section that's currently most visible
+      let currentSection = "";
+      
       for (const sectionId of sections) {
         const section = document.querySelector(sectionId);
         if (section) {
@@ -74,10 +77,14 @@ export function Sidebar() {
           const sectionBottom = sectionTop + (section as HTMLElement).offsetHeight;
 
           if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-            setActiveSection(sectionId);
+            currentSection = sectionId;
             break;
           }
         }
+      }
+
+      if (currentSection) {
+        setActiveSection(currentSection);
       }
     };
 
