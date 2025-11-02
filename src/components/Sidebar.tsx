@@ -15,9 +15,9 @@ export function Sidebar() {
   const navItems = [
     { name: "ABOUT", href: "#about" },
     { name: "EDUCATION", href: "#education" },
-    { name: "HONORS", href: "#honors" },
     { name: "RESEARCH", href: "#research-interest" },
     { name: "PUBLICATIONS", href: "#publications" },
+    { name: "HONORS", href: "#honors" },
     { name: "EXPERIENCE", href: "#teaching" },
     { name: "CONTACT", href: "#contact" },
   ];

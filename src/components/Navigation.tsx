@@ -12,14 +12,24 @@ export function Navigation() {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
+  // const navItems = [
+  //   { name: "About", href: "#about" },
+  //   { name: "Education", href: "#education" },
+  //   { name: "Research & Publications", href: "#publications" },
+  //   { name: "Honors & Awards", href: "#honors" },
+  //   { name: "Research Interest", href: "#research-interest" },
+  //   { name: "Experience", href: "#teaching" },
+  //   { name: "Contact", href: "#contact" },
+  // ];
+
   const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Education", href: "#education" },
-    { name: "Honors & Awards", href: "#honors" },
-    { name: "Research Interest", href: "#research-interest" },
-    { name: "Research & Publications", href: "#publications" },
-    { name: "Experience", href: "#teaching" },
-    { name: "Contact", href: "#contact" },
+    { name: "ABOUT", href: "#about" },
+    { name: "EDUCATION", href: "#education" },
+    { name: "RESEARCH", href: "#research-interest" },
+    { name: "PUBLICATIONS", href: "#publications" },
+    { name: "HONORS", href: "#honors" },
+    { name: "EXPERIENCE", href: "#teaching" },
+    { name: "CONTACT", href: "#contact" },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
