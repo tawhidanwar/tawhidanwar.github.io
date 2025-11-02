@@ -132,7 +132,7 @@ export function AboutSection() {
           {education.map((edu, index) => (
             <div key={index}>
               <div className="flex justify-between items-start mb-4">
-                <h4 className="text-2xl font-bold text-foreground uppercase">
+                <h4 className="text-2xl font-bold text-foreground">
                   {edu.degree}
                 </h4>
                 <span className="text-lg text-primary font-medium whitespace-nowrap ml-4">

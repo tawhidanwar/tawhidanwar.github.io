@@ -65,11 +65,11 @@ export function PublicationsSection() {
                   </div>
                   <div className="flex flex-col gap-2 items-end">
                     <Badge className={getImpactColor(pub.impact)}>
-                      {pub.impact}
-                    </Badge>
-                    <Badge variant="outline" className="text-xs">
                       {pub.type}
                     </Badge>
+                    {/* <Badge variant="outline" className="text-xs">
+                      {pub.type}
+                    </Badge> */}
                   </div>
                 </div>
               </CardHeader>

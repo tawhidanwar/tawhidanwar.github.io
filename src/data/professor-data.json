@@ -4,7 +4,7 @@
     "title": "Senior Lecturer",
     "institution": "BRAC University",
     "email": "tawhid.anwar@bracu.ac.bd",
-    "description": "Passionate Senior Lecturer at BRAC University specializing in introductory programming (Java & Python). Dedicated to student-centered learning and large-scale CS education. Also serves as Undergraduate Co-Coordinator.",
+    "description": "Student‑centric teacher‑scholar with a strong record of outstanding teaching, large‑scale course coordination, and hands‑on academic administration. Experienced in leading curriculum design and developing digital content for core programming courses. Actively supports departmental operations, academic leadership, and student success initiatives. Published in journals & international conferences, deeply committed to computer science education and effective pedagogy together.",
     "cvLink": "https://drive.google.com/file/d/1ZjlyubgUww6ihiJBg0ZIphvchW2BFJ_S/view?usp=sharing"
   },
   "stats": {
@@ -21,13 +21,17 @@
   "research": {
     "areas": [
       "Machine Learning",
-      "Applied Computing",
-      "CS Education at Scale",
-      "Natural Language Processing (NLP)",
-      "Biometric Authentication",
-      "Solar Irradiance Forecasting"
+      "Data Science",
+      "Responsible AI for Education & Population Well-Being",
+      "Educational Data Mining & Learning Analytics",
+      "Time-Series Forecasting",
+      "Computing Education Research",
+      "Educational Technology & Digital Learning Systems",
+      "Human-Centered AI & Digital Health"
     ],
-    "researchProfile": "https://scholar.google.com/citations?user=Ts7ckAIAAAAJ&hl=en"
+    "researchProfile": "https://scholar.google.com/citations?user=Ts7ckAIAAAAJ&hl=en",
+    "thesis": "Consequential Factors Influencing Students' Learning Experience in Online Team Teaching of Computer Programming Courses (BRAC University, 2022)",
+    "supervision": "Multiple undergraduate thesis groups and internship projects (2023–2025), topics spanning NLP, ML for time-series, computer vision, and EdTech"
   },
   "publications": [
     {

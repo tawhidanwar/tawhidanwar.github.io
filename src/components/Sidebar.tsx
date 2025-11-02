@@ -18,7 +18,8 @@ export function Sidebar() {
     { name: "RESEARCH", href: "#research-interest" },
     { name: "PUBLICATIONS", href: "#publications" },
     { name: "HONORS", href: "#honors" },
-    { name: "EXPERIENCE", href: "#teaching" },
+    { name: "TEACHING", href: "#teaching" },
+    { name: "ADMIN", href: "#administrative" },
     { name: "CONTACT", href: "#contact" },
   ];
 
@@ -64,7 +65,7 @@ export function Sidebar() {
   // Observe scroll position to highlight active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["#about", "#education", "#research-interest", "#publications", "#honors", "#teaching", "#contact"];
+      const sections = ["#about", "#education", "#research-interest", "#publications", "#honors", "#teaching", "#administrative", "#contact"];
       const scrollPosition = window.scrollY + 150; // Adjusted offset for better detection
 
       // Find the section that's currently most visible

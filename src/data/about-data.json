@@ -2,9 +2,9 @@
   "metaDescription": "Discover the profile of Md. Tawhid Anwar, a Senior Lecturer in the Department of Computer Science and Engineering at BRAC University. Explore his teaching philosophy, administrative roles, research, awards, and expertise in programming and CS education.",
   "biography": {
     "paragraphs": [
-      "Md. Tawhid Anwar is a Senior Lecturer in the Department of Computer Science and Engineering at BRAC University, where he also serves as the Undergraduate Co-Coordinator. He is deeply passionate about teaching, primarily focusing on introductory programming courses like Structured Programming (CSE110) and Object-Oriented Programming (CSE111) using Java and Python.",
-      "Known for his calm and student-centered teaching approach, Tawhid has made his full lecture series available on YouTube and the university's buX platform to support student learning. His journey at BRAC University began in January 2018 as a Teaching Assistant, and he became a full-time Lecturer in September 2019.",
-      "Beyond teaching, he has held significant administrative roles, including coordinating the student tutor program, managing departmental labs, and leading user acceptance testing for the university's student management system. He is also an active supervisor for thesis groups in machine learning and applied computing."
+      "Md. Tawhid Anwar is a passionate educator and researcher, currently serving as a Senior Lecturer in the Department of Computer Science and Engineering at BRAC University. With both his B.Sc. and M.Sc. in CSE from BRAC University, Tawhid graduated with top honors, earning the Chancellor’s Gold Medal and being named Valedictorian of the 15th Convocation.",
+      "He brings years of experience in teaching and mentoring, starting as a Student Tutor and Student Mentor before transitioning to a full-time academic role. Tawhid is also the faculty co-advisor of the BRAC University Entrepreneurship Development Forum (BUEDF), where he helps foster leadership and innovation among students.",
+      "His dedication to impactful teaching was recognized with the University’s Best Teaching Award for extraordinary performance. Tawhid's research interests include Artificial Intelligence, Financial Market Analysis, and Machine Learning, and he is driven by a desire to contribute meaningfully to the academic and personal growth of his students."
     ]
   },
   "education": [
@@ -41,45 +41,42 @@
     {
       "position": "Senior Lecturer",
       "institution": "BRAC University",
-      "period": "2019–Present",
+      "period": "Ongoing",
       "description": "Teaches introductory programming courses (CSE110 & CSE111) in Java and Python. Also serves as Undergraduate Co-Coordinator and Course Coordinator."
     },
     {
         "position": "Undergraduate Co-Coordinator",
         "institution": "BRAC University",
-        "period": "June 2024–Present",
+        "period": "Ongoing",
         "description": "Manages course offerings, scheduling, student support, and academic coordination for the CSE department."
     },
     {
-      "position": "Teaching Assistant",
+      "position": "Co-Advisor, BRAC University Entrepreneurship Development Forum (BUEDF)",
       "institution": "BRAC University",
-      "period": "2018–2019",
-      "description": "Assisted with teaching and grading for undergraduate computer science courses."
+      "period": "Ongoing",
+      "description": ""
     }
   ],
   "honors": [
-    "Best Teaching Award (Departmental, 2025)",
-    "Outstanding Service Award (Departmental, 2025)",
-    "Best Teaching Award (Departmental, 2024)",
-    "Outstanding Service Award (Departmental, 2024)",
-    "Chancellor’s Gold Medal (Valedictorian, M.Sc., 2023)",
-    "Best Teaching Award (University-wide, 2022)",
-    "Vice Chancellor’s Honor List (7 times)",
-    "Dean’s Honor List (2 times)",
-    "HSC Board Scholarship (87th in Dhaka Board)"
+    "Chancellor's Gold Medal & Valedictorian (Post-Graduation, M.Sc.) — 15th Convocation, BRAC University",
+    "University Best Teaching Award — Extraordinary Performance in Teaching (2022)",
+    "Department Best Teaching Award — Excellence in Teaching (2024, 2025)",
+    "Department Outstanding Service Award — Extraordinary dedication in Service (2024, 2025)",
+    "Graduated with 'Highest Distinction'",
+    "Vice Chancellor's Honor List (7×), Dean's Honor List (2×) — B.Sc. in CSE",
+    "6th place, Inter-University Programming Contest — 2016",
+    "HSC Board Scholarship (87th in Dhaka Board)",
+    "Grameen Bank Scholarship; Prothom Alo GPA-5 Award — 2012",
+    "Government Scholarship — Class Five and Class Eight"
   ],
   "expertise": [
-    "Teaching at Scale",
-    "Java",
-    "Python",
-    "Object-Oriented Programming (OOP)",
-    "Git",
-    "SQL",
-    "Assessment Quality Assurance",
-    "Program Operations",
-    "User Acceptance Testing (UAT)",
-    "CPUs/GPUs",
-    "CS Education at Scale",
-    "Process Design for Large Courses"
+    "Responsible AI for Education & Population Well-Being",
+    "Machine Learning",
+    "Data Science",
+    "Time-Series Forecasting",
+    "Computing Education Research",
+    "Educational Technology & Digital Learning Systems",
+    "Human-Centered AI & Digital Health",
+    "Educational Data Mining & Learning Analytics"  
   ]
 }

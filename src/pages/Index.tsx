@@ -8,6 +8,7 @@ import { ResearchInterestSection } from "@/components/ResearchInterestSection";
 import { ResearchSection } from "@/components/ResearchSection";
 import { PublicationsSection } from "@/components/PublicationsSection";
 import { TeachingSection } from "@/components/TeachingSection";
+import { AdministrativeSection } from "@/components/AdministrativeSection";
 import { ContactSection } from "@/components/ContactSection";
 import professorData from "@/data/professor-data.json";
 
@@ -30,6 +31,7 @@ const Index = () => {
             <PublicationsSection />
             <HonorsSection />
             <TeachingSection />
+            <AdministrativeSection />
             <ContactSection />
           </main>
           
@@ -53,6 +55,7 @@ const Index = () => {
                     <li><a href="#research-interest" className="text-muted-foreground hover:text-primary transition-colors">Research Interest</a></li>
                     <li><a href="#publications" className="text-muted-foreground hover:text-primary transition-colors">Research & Publications</a></li>
                     <li><a href="#teaching" className="text-muted-foreground hover:text-primary transition-colors">Teaching</a></li>
+                    <li><a href="#administrative" className="text-muted-foreground hover:text-primary transition-colors">Administrative</a></li>
                     <li><a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
                   </ul>
                 </div>

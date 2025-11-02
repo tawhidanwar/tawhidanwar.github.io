@@ -23,40 +23,6 @@
     "title": "My Teaching Philosophy",
     "content": "I believe that a teacher's job is to be calm and explain the same concept a hundred times if needed, without getting annoyed. My full lecture series is available on the university's buX platform and my YouTube channel, 'Learn with Tawhid', to ensure students have access to the resources they need to succeed."
   },
-  "contentCreation": {
-    "description": "Built four complete programming courses available to students: two in Python (Structured Programming & OOP) and two in Java (Structured Programming & OOP).",
-    "videoSeries": [
-      {
-        "title": "Python Structured Programming series",
-        "count": "30+"
-      },
-      {
-        "title": "Python OOP series",
-        "count": "45+"
-      },
-      {
-        "title": "Java Structured Programming series",
-        "count": "35+"
-      },
-      {
-        "title": "Java OOP series",
-        "count": "40+"
-      }
-    ],
-    "impact": "~7,000+ BRACU students benefited during/after COVID; continuing global reach via the Learn with Tawhid channel."
-  },
-  "curriculumTransition": [
-    {
-      "year": "2020",
-      "transition": "Java → Python",
-      "description": "Led the Java → Python shift (rebuilt course structures, labs, assessments)."
-    },
-    {
-      "year": "2024",
-      "transition": "Python → Java",
-      "description": "Led the reversion to Java — rebuilding materials from scratch and publishing full Java lecture series to buX/YouTube."
-    }
-  ],
   "achievements": [
     {
       "title": "Chancellor’s Gold Medal (Valedictorian, M.Sc.)",

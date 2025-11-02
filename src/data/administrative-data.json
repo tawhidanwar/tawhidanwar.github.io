@@ -1,0 +1,91 @@
+{
+  "roles": [
+    {
+      "title": "Undergraduate Co-Coordinator (UG Program Ops)",
+      "period": "Jun 2024–Present",
+      "responsibilities": [
+        "Department-wide UG offerings & semester scheduling; academic-portal entries",
+        "Primary student POC (registration, credit transfers, backlogs, progression, grievances)",
+        "Adjunct load & timetable finalization; conflict resolution & workload balance",
+        "Academic calendars, exam schedules & internal assessments; on-time grading coordination",
+        "Committee representation; orientations/workshops/industry talks",
+        "Continuous improvement from feedback: collaboration with Registrar's Office"
+      ]
+    },
+    {
+      "title": "Course Coordinator — CSE110 & CSE111",
+      "period": "2020–Present",
+      "responsibilities": [
+        "Full life-cycle ownership across Structured Programming (CSE110) and Object-Oriented Programming (CSE111)",
+        "Curriculum design & governance; faculty assignment/mentorship; primary student contact",
+        "Centralized midterm & final with moderation; quality assurance; cross-unit liaison",
+        "Student support; lab sheets redesign; managed section shifts during online era",
+        "Centralized lab evaluations & QA",
+        "Scale: peaked at a record run of dozens of sections in a single term (Fall 2022)"
+      ]
+    },
+    {
+      "title": "Student Tutor Coordinator",
+      "period": "2019–Present",
+      "responsibilities": [
+        "Built and run an end-to-end operating model: applications → analysis → recruitment → routine-aware rostering (~15 hrs/week) → HR requisitions → digital punch-card (automated hours/pay) → utilization & performance analytics → weekly reports & coaching → end-of-term reporting",
+        "Established a central Discord for consultations, monthly ST meetings, targeted assignments for at-risk students, and multi-channel query handling (email/Discord/Slack)",
+        "Scale: routinely led a large ST workforce (peaks ~200), sustaining smooth support across CSE and MNS"
+      ]
+    },
+    {
+      "title": "CSE Department Lab Coordinator",
+      "period": "Oct 2022–Present",
+      "responsibilities": [
+        "Operate 31 computer labs (~1,300 PCs) with 9 Lab Technical Officers",
+        "Scheduling, maintenance, software rollouts, inventory, compliance/safety",
+        "Support for labs/workshops/exams, and audit documentation"
+      ]
+    },
+    {
+      "title": "Advising & Student Support",
+      "period": "Ongoing",
+      "responsibilities": [
+        "Degree approval & graduation checks (CSE/GenEd/electives)",
+        "Hybrid on-campus/online advising; COD advisor/moderator (earlier) to assist students at scale",
+        "Open-door policy, timely responses, clear course outlines/timelines, grading SLAs, and live exam support (online era)"
+      ]
+    },
+    {
+      "title": "Department Operations & Service",
+      "period": "Ongoing",
+      "responsibilities": [
+        "CSE Research Lab upgrade (late 2024): procurement of high-performance desktop PCs, significantly boosting compute research capacity",
+        "Departmental Budget Committee (since Summer 2022): core role in annual budgeting & resource allocation across academic, research, and operational needs",
+        "buX leadership: university-wide buX support lead during COVID; ongoing buX Course Admin for CSE110/111",
+        "Academic service (recurring): thesis/pre-thesis report checks; undergraduate admission test invigilation; faculty recruitment advising (leveraging the ST→faculty pipeline)",
+        "Clubs/Outreach/IT: Co-advisor, BUEDF; Voluntary IT Advisor to BRACU IT"
+      ]
+    }
+  ],
+  "judging": {
+    "title": "Academic Judge for Student Competitions",
+    "competitions": [
+      {
+        "name": "Project Tech Tussle 2021",
+        "organizer": "IEEE CS BRACU SB",
+        "description": "Judged software/tech projects on problem framing, solution design, code quality, and impact"
+      },
+      {
+        "name": "Web Tech Hackathon 2021",
+        "organizer": "IEEE CS BRACU SB",
+        "description": "Evaluated web prototypes for UX, technical depth, originality, and demo clarity"
+      },
+      {
+        "name": "Tech Spectra 2.0 — 2024",
+        "organizer": "BRACU Robotics Club",
+        "description": "Assessed robotics builds on system design, control robustness, and real-world applicability"
+      },
+      {
+        "name": "Intra Hacktive 1.0 — 2024",
+        "organizer": "BRACU Computer Club",
+        "description": "Judged hackathon entries for innovation, feasibility, teamwork, and presentation"
+      }
+    ]
+  }
+}

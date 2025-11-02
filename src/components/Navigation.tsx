@@ -28,7 +28,8 @@ export function Navigation() {
     { name: "RESEARCH", href: "#research-interest" },
     { name: "PUBLICATIONS", href: "#publications" },
     { name: "HONORS", href: "#honors" },
-    { name: "EXPERIENCE", href: "#teaching" },
+    { name: "TEACHING", href: "#teaching" },
+    { name: "ADMINISTRATIVE", href: "#administrative" },
     { name: "CONTACT", href: "#contact" },
   ];
 
