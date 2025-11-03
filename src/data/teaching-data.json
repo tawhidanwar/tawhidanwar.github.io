@@ -1,15 +1,6 @@
 {
   "courses": [
     {
-      "code": "CSE111",
-      "title": "Object Oriented Programming",
-      "level": "Undergraduate",
-      "semester": "Fall 2025",
-      "students": null,
-      "rating": null,
-      "description": "This course is an introduction to data structures, formal specification of syntax, elements of language theory and mathematical preliminaries. Topics include formal languages, structured programming concepts, and a survey of features of existing high level languages. Students design and write applications using an appropriate language, with a compulsory 3-hour weekly lab."
-    },
-    {
       "code": "CSE110",
       "title": "Programming Language I",
       "level": "Undergraduate",
@@ -19,13 +10,13 @@
       "description": "An introduction to the foundations of computation and the purpose of mechanized computation. Emphasis is placed on techniques of problem analysis and the development of algorithms and programs. Topics include algorithms, flow chart construction, information representation, and writing, debugging, and running programs."
     },
     {
-      "code": "CSE260",
-      "title": "Digital Logic Design",
+      "code": "CSE111",
+      "title": "Object Oriented Programming",
       "level": "Undergraduate",
-      "semester": "Lab",
+      "semester": "Fall 2025",
       "students": null,
       "rating": null,
-      "description": "This course provides an introduction to digital systems such as computer, communication and information systems. The course covers Boolean algebra, digital logic gates, combinational logic circuits, decoders, encoders, multiplexers and demultiplexers, as well as sequential circuits: asynchronous and synchronous counters, registers, flip-flops. An introduction to memory elements and registers is also provided. The course includes a compulsory 3-hour laboratory work each week."
+      "description": "This course is an introduction to data structures, formal specification of syntax, elements of language theory and mathematical preliminaries. Topics include formal languages, structured programming concepts, and a survey of features of existing high level languages. Students design and write applications using an appropriate language, with a compulsory 3-hour weekly lab."
     },
     {
       "code": "CSE220",
@@ -35,6 +26,15 @@
       "students": null,
       "rating": null,
       "description": "This course is an introduction to data structures, where students study elementary data structures such as arrays, lists, stacks, queues, trees, etc. These data structures are used to study and implement different algorithms such as sorting, searching, tree traversal, etc. The course includes a 3-hour mandatory laboratory per week where students use Java to implement the various data structures and algorithms learned in the theory component."
+    },
+    {
+      "code": "CSE260",
+      "title": "Digital Logic Design",
+      "level": "Undergraduate",
+      "semester": "Lab",
+      "students": null,
+      "rating": null,
+      "description": "This course provides an introduction to digital systems such as computer, communication and information systems. The course covers Boolean algebra, digital logic gates, combinational logic circuits, decoders, encoders, multiplexers and demultiplexers, as well as sequential circuits: asynchronous and synchronous counters, registers, flip-flops. An introduction to memory elements and registers is also provided. The course includes a compulsory 3-hour laboratory work each week."
     }
   ],
   "teachingPhilosophy": {

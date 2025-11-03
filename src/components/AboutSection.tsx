@@ -148,11 +148,6 @@ export function AboutSection() {
                 <p className="text-muted-foreground">
                   <span className="font-semibold text-foreground">{edu.institution_type}:</span> {edu.institution}
                 </p>
-                {(edu.cgpa || edu.gpa) && (
-                  <p className="text-muted-foreground">
-                    <span className="font-semibold text-foreground">{edu.cgpa ? 'CGPA' : 'GPA'}:</span> {edu.cgpa || edu.gpa}
-                  </p>
-                )}
               </CardContent>
             </Card>
           ))}
