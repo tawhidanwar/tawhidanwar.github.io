@@ -17,6 +17,24 @@
       "students": null,
       "rating": null,
       "description": "An introduction to the foundations of computation and the purpose of mechanized computation. Emphasis is placed on techniques of problem analysis and the development of algorithms and programs. Topics include algorithms, flow chart construction, information representation, and writing, debugging, and running programs."
+    },
+    {
+      "code": "CSE260",
+      "title": "Digital Logic Design",
+      "level": "Undergraduate",
+      "semester": "Lab",
+      "students": null,
+      "rating": null,
+      "description": "This course provides an introduction to digital systems such as computer, communication and information systems. The course covers Boolean algebra, digital logic gates, combinational logic circuits, decoders, encoders, multiplexers and demultiplexers, as well as sequential circuits: asynchronous and synchronous counters, registers, flip-flops. An introduction to memory elements and registers is also provided. The course includes a compulsory 3-hour laboratory work each week."
+    },
+    {
+      "code": "CSE220",
+      "title": "Data Structures",
+      "level": "Undergraduate",
+      "semester": "Lab",
+      "students": null,
+      "rating": null,
+      "description": "This course is an introduction to data structures, where students study elementary data structures such as arrays, lists, stacks, queues, trees, etc. These data structures are used to study and implement different algorithms such as sorting, searching, tree traversal, etc. The course includes a 3-hour mandatory laboratory per week where students use Java to implement the various data structures and algorithms learned in the theory component."
     }
   ],
   "teachingPhilosophy": {

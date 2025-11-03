@@ -53,10 +53,10 @@ export function PublicationsSection() {
                         <Calendar className="h-4 w-4" />
                         {pub.year}
                       </div>
-                      <div className="flex items-center gap-1">
+                      {/* <div className="flex items-center gap-1">
                         <Users className="h-4 w-4" />
                         {pub.authors.length} authors
-                      </div>
+                      </div> */}
                       {/* <div className="flex items-center gap-1">
                         <Quote className="h-4 w-4" />
                         {pub.citations} citations
@@ -76,13 +76,15 @@ export function PublicationsSection() {
               <CardContent className="space-y-4">
                 <div className="space-y-2">
                   <div className="text-sm">
-                    <span className="font-medium text-foreground">Journal: </span>
+                    <span className="font-medium text-foreground">
+                      {pub.type === "Journal Article" ? "Journal: " : "Conference: "}
+                    </span>
                     <span className="text-primary font-medium">{pub.journal}</span>
                   </div>
-                  <div className="text-sm">
+                  {/* <div className="text-sm">
                     <span className="font-medium text-foreground">Authors: </span>
                     <span className="text-muted-foreground">{pub.authors.join(", ")}</span>
-                  </div>
+                  </div> */}
                   {/* <div className="text-sm">
                     <span className="font-medium text-foreground">DOI: </span>
                     <span className="text-muted-foreground font-mono text-xs">{pub.doi}</span>

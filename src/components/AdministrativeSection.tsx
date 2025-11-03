@@ -1,10 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Briefcase, Users, Calendar, Award } from "lucide-react";
+import { Briefcase, Users, Calendar, Award, Mic } from "lucide-react";
 import administrativeData from "@/data/administrative-data.json";
 
 export function AdministrativeSection() {
-  const { roles, judging } = administrativeData;
+  const { roles, judging, talksOutreach } = administrativeData;
 
   return (
     <section id="administrative" className="py-12 bg-background">
@@ -47,7 +47,7 @@ export function AdministrativeSection() {
         </div>
 
         {/* Academic Judging */}
-        <div>
+        <div className="mb-16">
           <h3 className="text-2xl font-serif font-semibold mb-8 flex items-center gap-3">
             <Award className="h-7 w-7 text-primary" />
             {judging.title}
@@ -68,6 +68,40 @@ export function AdministrativeSection() {
                     {competition.description}
                   </p>
                 </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Talks & Outreach */}
+        <div>
+          <h3 className="text-2xl font-serif font-semibold mb-8 flex items-center gap-3">
+            <Mic className="h-7 w-7 text-primary" />
+            {talksOutreach.title}
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {talksOutreach.events.map((event, index) => (
+              <Card key={index} className="bg-gradient-card border-border/50 hover:shadow-card transition-all duration-300">
+                <CardHeader>
+                  <div className="flex items-start justify-between gap-4">
+                    <CardTitle className="text-lg font-serif text-primary">
+                      {event.name}
+                    </CardTitle>
+                    <Badge variant="outline" className="border-primary/30 text-primary whitespace-nowrap">
+                      {event.year}
+                    </Badge>
+                  </div>
+                  <p className="text-sm text-muted-foreground font-medium">
+                    {event.organizer}
+                  </p>
+                </CardHeader>
+                {event.description && (
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {event.description}
+                    </p>
+                  </CardContent>
+                )}
               </Card>
             ))}
           </div>

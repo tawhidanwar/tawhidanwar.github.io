@@ -128,26 +128,33 @@ export function AboutSection() {
             EDUCATION
           </h2>
         </div>
-        <div className="space-y-8">
+        <div className="space-y-6">
           {education.map((edu, index) => (
-            <div key={index}>
-              <div className="flex justify-between items-start mb-4">
-                <h4 className="text-2xl font-bold text-foreground">
-                  {edu.degree}
-                </h4>
-                <span className="text-lg text-primary font-medium whitespace-nowrap ml-4">
-                  {edu.year}
-                </span>
-              </div>
-              <div className="space-y-2 text-[16px]">
+            <Card key={index} className="bg-gradient-card border-border/50 hover:shadow-card transition-all duration-300">
+              <CardHeader>
+                <div className="flex justify-between items-start gap-4">
+                  <CardTitle className="text-xl font-serif">
+                    {edu.degree}
+                  </CardTitle>
+                  <Badge variant="outline" className="border-primary/30 text-primary whitespace-nowrap">
+                    {edu.year}
+                  </Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-2.5 text-[15px]">
                 <p className="text-muted-foreground">
                   <span className="font-semibold text-foreground">Subject:</span> {edu.focus}
                 </p>
                 <p className="text-muted-foreground">
                   <span className="font-semibold text-foreground">{edu.institution_type}:</span> {edu.institution}
                 </p>
-              </div>
-            </div>
+                {(edu.cgpa || edu.gpa) && (
+                  <p className="text-muted-foreground">
+                    <span className="font-semibold text-foreground">{edu.cgpa ? 'CGPA' : 'GPA'}:</span> {edu.cgpa || edu.gpa}
+                  </p>
+                )}
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

@@ -56,9 +56,8 @@
       "period": "Ongoing",
       "responsibilities": [
         "CSE Research Lab upgrade (late 2024): procurement of high-performance desktop PCs, significantly boosting compute research capacity",
-        "Departmental Budget Committee (since Summer 2022): core role in annual budgeting & resource allocation across academic, research, and operational needs",
         "buX leadership: university-wide buX support lead during COVID; ongoing buX Course Admin for CSE110/111",
-        "Academic service (recurring): thesis/pre-thesis report checks; undergraduate admission test invigilation; faculty recruitment advising (leveraging the ST→faculty pipeline)",
+        "Academic service (recurring): thesis/pre-thesis report checks; undergraduate admission test invigilation;",
         "Clubs/Outreach/IT: Co-advisor, BUEDF; Voluntary IT Advisor to BRACU IT"
       ]
     }
@@ -85,6 +84,23 @@
         "name": "Intra Hacktive 1.0 — 2024",
         "organizer": "BRACU Computer Club",
         "description": "Judged hackathon entries for innovation, feasibility, teamwork, and presentation"
+      }
+    ]
+  },
+  "talksOutreach": {
+    "title": "Talks & Outreach",
+    "events": [
+      {
+        "name": "Seminar — From Classroom to Career: The Power of Programming Skills",
+        "organizer": "IEEE Student Branch, BRAC University",
+        "year": "2025",
+        "description": ""
+      },
+      {
+        "name": "Workshop — Python for Everyone",
+        "organizer": "BRACU Electrical & Electronic Club",
+        "year": "2020",
+        "description": "Hands-on introduction to Python for beginners; basics of syntax, problem solving, and practice"
       }
     ]
   }

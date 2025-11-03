@@ -102,10 +102,10 @@ export function Sidebar() {
       
       <div className="relative z-10 w-full flex flex-col items-center h-full">
         {/* Profile Picture */}
-        <div className="flex flex-col items-center mb-8">
+        <div className="flex flex-col items-center mb-6">
           <div 
             onClick={handleProfileClick}
-            className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl mb-4 ring-2 ring-primary/10 cursor-pointer transition-all duration-300 hover:scale-105 hover:border-primary/50 hover:ring-primary/20"
+            className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl mb-3 mt-5 ring-2 ring-primary/10 cursor-pointer transition-all duration-300 hover:scale-105 hover:border-primary/50 hover:ring-primary/20"
             title="Back to top"
           >
             <img 
