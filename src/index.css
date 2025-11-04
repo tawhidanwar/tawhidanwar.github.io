@@ -141,7 +141,7 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Custom scrollbar for sidebar */
+  /* Custom scrollbar for sidebar - hidden by default */
   .sidebar-scrollbar::-webkit-scrollbar {
     width: 6px;
   }
@@ -152,11 +152,17 @@ All colors MUST be HSL.
   }
 
   .sidebar-scrollbar::-webkit-scrollbar-thumb {
-    background: hsl(var(--primary) / 0.3);
+    background: transparent;
     border-radius: 10px;
+    transition: background 0.3s ease;
   }
 
-  .sidebar-scrollbar::-webkit-scrollbar-thumb:hover {
+  /* Show scrollbar when sidebar is hovered */
+  .sidebar-scrollbar.show-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.3);
+  }
+
+  .sidebar-scrollbar.show-scrollbar::-webkit-scrollbar-thumb:hover {
     background: hsl(var(--primary) / 0.5);
   }
 

@@ -7,6 +7,7 @@ import professorPortrait from "@/assets/Tawhid_Anwar_Portrait.jpg";
 export function Sidebar() {
   const { theme, setTheme } = useTheme();
   const [activeSection, setActiveSection] = useState<string>("");
+  const [showScrollbar, setShowScrollbar] = useState<boolean>(false);
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -96,16 +97,20 @@ export function Sidebar() {
   }, []);
 
   return (
-    <aside className="hidden lg:flex fixed left-0 top-0 h-screen w-72 bg-background/40 backdrop-blur-xl border-r border-border/50 flex-col items-center py-6 px-6 z-50 overflow-hidden shadow-2xl">
+    <aside 
+      className={`hidden lg:block fixed left-0 top-0 bottom-0 w-72 bg-background/40 backdrop-blur-xl border-r border-border/50 z-50 shadow-2xl ${showScrollbar ? 'show-scrollbar' : ''}`}
+      onMouseEnter={() => setShowScrollbar(true)}
+      onMouseLeave={() => setShowScrollbar(false)}
+    >
       {/* Glassmorphic overlay effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none"></div>
       
-      <div className="relative z-10 w-full flex flex-col items-center h-full">
+      <div className="relative z-10 w-full h-full flex flex-col items-center py-6 px-6 overflow-y-auto overflow-x-hidden sidebar-scrollbar">
         {/* Profile Picture */}
-        <div className="flex flex-col items-center mb-6">
+        <div className="flex flex-col items-center mb-4">
           <div 
             onClick={handleProfileClick}
-            className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl mb-3 mt-5 ring-2 ring-primary/10 cursor-pointer transition-all duration-300 hover:scale-105 hover:border-primary/50 hover:ring-primary/20"
+            className="w-44 h-44 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl mb-3 mt-3 ring-2 ring-primary/10 cursor-pointer transition-all duration-300 hover:scale-105 hover:border-primary/50 hover:ring-primary/20"
             title="Back to top"
           >
             <img 
@@ -129,7 +134,7 @@ export function Sidebar() {
         </div>
 
         {/* Navigation Items */}
-        <nav className="w-full flex flex-col space-y-1.5 flex-grow">
+        <nav className="w-full flex flex-col space-y-1 flex-grow">
           {navItems.map((item) => (
             <a
               key={item.name}
@@ -137,7 +142,7 @@ export function Sidebar() {
               onClick={(e) => handleNavClick(e, item.href)}
               className={`
                 text-muted-foreground hover:text-primary 
-                px-4 py-3 text-sm font-medium tracking-wide
+                px-4 py-2.5 text-sm font-medium tracking-wide
                 transition-all duration-300 rounded-xl text-center
                 backdrop-blur-sm border border-transparent
                 ${activeSection === item.href 
@@ -152,7 +157,7 @@ export function Sidebar() {
         </nav>
 
         {/* Theme Toggle */}
-        <div className="w-full mt-auto pt-4 flex justify-left">
+        <div className="w-full mt-auto pt-3 flex justify-left">
           <Button
             id="theme-toggle-btn"
             variant="ghost"
