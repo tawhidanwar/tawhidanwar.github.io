@@ -100,6 +100,7 @@ export function PublicationsSection() {
                     variant="outline" 
                     size="sm" 
                     className="group-hover:border-primary group-hover:text-primary"
+                    onClick={() => window.open(`https://doi.org/${pub.doi}`, '_blank')}
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     View Paper
